@@ -188,6 +188,10 @@ input, select, textarea {
 		margin: 0 0 2rem 0;
 	}
 
+	.centerText	{
+		text-align: center;
+	}
+
 	h1, h2, h3, h4, h5, h6 {
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-weight: 900;
@@ -3243,7 +3247,7 @@ input, select, textarea {
 			height: 100%;
 			background-color: #212931;
 			background-image: url("../../images/overlay.png"), 
-							linear-gradient(0deg, rgb(107, 18, 18), rgba(0, 0, 0, 1)), 
+							linear-gradient(0deg, rgb(192, 19, 19), rgb(43, 33, 33)), 
 							url("../../images/bg.jpg");
 			background-size: auto,								auto,														100% auto;
 			background-position: center,								center,														top center;
