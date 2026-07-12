@@ -1,0 +1,191 @@
+---
+import type { WorkExperience, Education } from '../types';
+
+interface Props {
+  experiences: WorkExperience[];
+  education: Education;
+}
+
+const { experiences, education } = Astro.props;
+---
+
+<section id="experience" class="section experience">
+  <div class="section__inner">
+    <span class="section__eyebrow reveal">Where I've Been</span>
+    <h2 class="section__title reveal">Experience</h2>
+
+    <div class="timeline">
+      {experiences.map((exp) => (
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__body">
+            <span class="timeline__date">{exp.dates}</span>
+            <h3 class="timeline__role">{exp.role}</h3>
+            <p class="timeline__org">{exp.company} &middot; {exp.location}</p>
+            <ul class="timeline__bullets">
+              {exp.bullets.map((b) => <li>{b}</li>)}
+            </ul>
+            <ul class="timeline__tags">
+              {exp.tags.map((t) => <li class="tag tag--sm">{t}</li>)}
+            </ul>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div class="education-card reveal">
+      <div class="education-card__header">
+        <span class="education-card__icon"><i class="fas fa-graduation-cap"></i></span>
+        <div class="education-card__info">
+          <h3 class="education-card__degree">{education.degree}</h3>
+          <p class="education-card__school">{education.school} &middot; {education.location}</p>
+        </div>
+        <span class="education-card__dates">{education.dates}</span>
+      </div>
+      <ul class="education-card__bullets">
+        {education.bullets.map((b) => <li>{b}</li>)}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<style>
+  .timeline {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.4rem;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--color-accent-cyan), var(--color-accent-purple), transparent);
+  }
+
+  .timeline__item {
+    position: relative;
+    padding: 0 0 3rem 2rem;
+  }
+
+  .timeline__item:last-child { padding-bottom: 0; }
+
+  .timeline__dot {
+    position: absolute;
+    left: calc(-1.5rem - 7px);
+    top: 0.35rem;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--gradient-accent);
+    border: 3px solid var(--color-bg);
+    box-shadow: 0 0 8px var(--color-accent-glow);
+  }
+
+  .timeline__date {
+    display: block;
+    font-size: var(--font-size-sm);
+    color: var(--color-accent-cyan);
+    font-weight: 500;
+    margin-bottom: 0.35rem;
+    font-family: var(--font-mono);
+  }
+
+  .timeline__role {
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    color: var(--color-heading);
+    margin-bottom: 0.2rem;
+    line-height: var(--line-height-heading);
+  }
+
+  .timeline__org {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    margin-bottom: 1rem;
+  }
+
+  .timeline__bullets {
+    list-style: disc;
+    padding-left: 1.25rem;
+    color: var(--color-text-primary);
+    margin-bottom: 1rem;
+  }
+
+  .timeline__bullets li {
+    margin-bottom: 0.4rem;
+    font-size: var(--font-size-sm);
+    line-height: 1.6;
+  }
+
+  .timeline__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .education-card {
+    background: var(--color-bg-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--card-radius);
+    padding: 1.75rem;
+  }
+
+  .education-card__header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .education-card__icon {
+    font-size: 1.5rem;
+    background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-top: 0.1rem;
+    flex-shrink: 0;
+  }
+
+  .education-card__info { flex: 1; min-width: 0; }
+
+  .education-card__degree {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    color: var(--color-heading);
+    margin-bottom: 0.15rem;
+  }
+
+  .education-card__school {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+  }
+
+  .education-card__dates {
+    font-size: var(--font-size-sm);
+    color: var(--color-accent-cyan);
+    font-family: var(--font-mono);
+    white-space: nowrap;
+  }
+
+  .education-card__bullets {
+    list-style: disc;
+    padding-left: 1.25rem;
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-sm);
+  }
+
+  .education-card__bullets li { margin-bottom: 0.3rem; }
+
+  @media (max-width: 768px) {
+    .education-card__dates {
+      flex-basis: 100%;
+      margin-top: 0.25rem;
+    }
+  }
+</style>

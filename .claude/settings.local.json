@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git *)",
+      "Bash(npm --version)",
+      "Bash(npm install *)",
+      "Bash(npm audit *)",
+      "Bash(npm run *)",
+      "Bash(python -c \"import re; html=open\\('dist/index.html'\\).read\\(\\); m=re.search\\('content=\\\\\"\\([^\\\\\"]+\\)\\\\\"', html[html.find\\('Content-Security-Policy'\\):]\\); print\\(m.group\\(1\\)\\)\")"
+    ]
+  }
+}

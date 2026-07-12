@@ -1,0 +1,128 @@
+---
+---
+
+<section id="about" class="section about">
+  <div class="section__inner">
+    <span class="section__eyebrow reveal">Who I Am</span>
+    <h2 class="section__title reveal">About Me</h2>
+    <div class="about__grid reveal">
+      <div class="about__text">
+        <p>
+          I'm a 4th year MEng Software Engineering student at Heriot-Watt University, Edinburgh,
+          with a strong interest in AI, machine learning, and full-stack development. I enjoy
+          building things that are both technically sound and genuinely useful — from drone
+          imagery analysis systems to web applications that track real-world data.
+        </p>
+        <p>
+          Most recently I completed an engineering internship at NatWest Group, where I worked
+          in a professional Agile team and built an AI-powered documentation quality enhancer.
+          Outside of coding I'm a member of the Heriot-Watt Volleyball Team, which keeps my
+          teamworking and time-management skills just as sharp.
+        </p>
+      </div>
+      <div class="about__details">
+        <ul class="about__meta">
+          <li>
+            <span class="about__meta-label">University</span>
+            Heriot-Watt University, Edinburgh
+          </li>
+          <li>
+            <span class="about__meta-label">Degree</span>
+            MEng Software Engineering
+          </li>
+          <li>
+            <span class="about__meta-label">Graduation</span>
+            May 2027 — Predicted 1st
+          </li>
+          <li>
+            <span class="about__meta-label">Location</span>
+            Edinburgh, Scotland
+          </li>
+          <li>
+            <span class="about__meta-label">Email</span>
+            <a href="mailto:tor4704@gmail.com">tor4704@gmail.com</a>
+          </li>
+        </ul>
+        <div class="about__links">
+          <a
+            href="https://github.com/TorCh04"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-link"
+          >
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/nontapat-chuenkingkaew"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-link"
+          >
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  .about__text p {
+    color: var(--color-text-primary);
+    font-size: var(--font-size-lg);
+    line-height: 1.8;
+    margin-bottom: 1.25rem;
+  }
+
+  .about__text p:last-child { margin-bottom: 0; }
+
+  .about__meta {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .about__meta li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-primary);
+  }
+
+  .about__meta a {
+    color: var(--color-accent-cyan);
+    transition: opacity var(--transition-base);
+  }
+
+  .about__meta a:hover { opacity: 0.75; }
+
+  .about__meta-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-wide);
+    color: var(--color-text-muted);
+  }
+
+  .about__links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 768px) {
+    .about__grid {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+  }
+</style>

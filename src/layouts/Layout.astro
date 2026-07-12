@@ -1,0 +1,46 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Tor Chuenkingkaew — Portfolio',
+  description = 'Nontapat (Tor) Chuenkingkaew — MEng Software Engineering student at Heriot-Watt University. AI/ML, full-stack developer, Edinburgh.',
+} = Astro.props;
+
+const csp = [
+  "default-src 'self'",
+  "script-src 'self'",
+  "style-src 'self' 'unsafe-inline'",
+  "font-src 'self'",
+  "img-src 'self'",
+  "connect-src 'none'",
+  "form-action 'none'",
+  "frame-ancestors 'none'",
+  "base-uri 'self'",
+].join('; ');
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+
+    <!-- Security headers via meta -->
+    <meta http-equiv="Content-Security-Policy" content={csp} />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+    <!-- External script — satisfies script-src 'self' with no inline JS -->
+    <script src="/portfolio.js" defer></script>
+  </body>
+</html>

@@ -1,197 +1,360 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Tor's Website</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nontapat (Tor) Chuenkingkaew — MEng Software Engineering student at Heriot-Watt University. AI/ML, full-stack developer, Edinburgh." />
+  <title>Tor Chuenkingkaew — Portfolio</title>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+  <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Welcome</h1>
-						<p>A showcase of my project and abilities</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+  <!-- Font Awesome (local) -->
+  <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Home</a>
-					</header>
+  <!-- Portfolio styles -->
+  <link rel="stylesheet" href="assets/css/portfolio.css" />
+</head>
+<body>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="generic.html">School Projects</a></li>
-							<li><a href="personalProjects.html">Personal Projects</a></li>
-							<!-- <li><a href="elements.html">Elements Reference</a></li> -->
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/nontapat-chuenkingkaew" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/TorCh04" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+  <!-- ── NAVBAR ──────────────────────────────────────────────── -->
+  <nav id="navbar" class="navbar">
+    <div class="navbar__inner">
+      <a href="#hero" class="navbar__logo">TC</a>
+      <ul class="navbar__links" id="navLinks">
+        <li><a href="#about"      class="nav-link">About</a></li>
+        <li><a href="#skills"     class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects"   class="nav-link">Projects</a></li>
+        <li><a href="#contact"    class="nav-link">Contact</a></li>
+      </ul>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
 
-				<!-- Main -->
-					<div id="main">
+  <!-- ── HERO ────────────────────────────────────────────────── -->
+  <section id="hero" class="hero">
+    <div class="hero__content">
+      <p class="hero__eyebrow">Hi, I'm</p>
+      <h1 class="hero__name">
+        Nontapat <span class="hero__nickname">(Tor)</span><br />Chuenkingkaew
+      </h1>
+      <p class="hero__tagline">
+        MEng Software Engineering &middot; AI &amp; ML &middot; Full-Stack Developer
+      </p>
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary">View Projects</a>
+        <a href="#contact"  class="btn btn--ghost">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <span class="hero__scroll-line"></span>
+      <span>Scroll</span>
+    </div>
+  </section>
 
-						<!-- Featured Post -->
-							<article class="">
-								<header class="major">
-									<h2><a href="#">About Me</a></h2>
-									<p>Hello! Nice to meet you! I'm Tor, a 3rd year Computer Science student currently 
-										enrolled at Heriot-Watt University with a passion in AI and Software Development.</p>
-									<p></p>Hope you enjoy your stay!</p>
-								</header>
-							</article>
+  <!-- ── ABOUT ───────────────────────────────────────────────── -->
+  <section id="about" class="section about">
+    <div class="section__inner">
+      <span class="section__eyebrow reveal">Who I Am</span>
+      <h2 class="section__title reveal">About Me</h2>
+      <div class="about__grid reveal">
+        <div class="about__text">
+          <p>
+            I'm a 4th year MEng Software Engineering student at Heriot-Watt University, Edinburgh,
+            with a strong interest in AI, machine learning, and full-stack development. I enjoy
+            building things that are both technically sound and genuinely useful — from drone
+            imagery analysis systems to web applications that track real-world data.
+          </p>
+          <p>
+            Most recently I completed an engineering internship at NatWest Group, where I worked
+            in a professional Agile team and built an AI-powered documentation quality enhancer.
+            Outside of coding I'm a member of the Heriot-Watt Volleyball Team, which keeps my
+            teamworking and time-management skills just as sharp.
+          </p>
+        </div>
+        <div class="about__details">
+          <ul class="about__meta">
+            <li>
+              <span class="about__meta-label">University</span>
+              Heriot-Watt University, Edinburgh
+            </li>
+            <li>
+              <span class="about__meta-label">Degree</span>
+              MEng Software Engineering
+            </li>
+            <li>
+              <span class="about__meta-label">Graduation</span>
+              May 2027 &mdash; Predicted 1st
+            </li>
+            <li>
+              <span class="about__meta-label">Location</span>
+              Edinburgh, Scotland
+            </li>
+            <li>
+              <span class="about__meta-label">Email</span>
+              <a href="mailto:tor4704@gmail.com">tor4704@gmail.com</a>
+            </li>
+          </ul>
+          <div class="about__links">
+            <a href="https://github.com/TorCh04" target="_blank" rel="noopener" class="social-link">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/nontapat-chuenkingkaew" target="_blank" rel="noopener" class="social-link">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-						<!-- Posts -->
-							<section class="post featured">
-								<article>
-									<header>
-										<h2>School ProJects<br /></></h2>
-									</header>
-									<img class="image fit" src="images/pic02.jpg" alt="" /></>
-									<p class="centerText">A showcase of projects completed during my time at Heriot-Watt University.</p> 
-									<p></p>Private Repositories can be requested</p>
-									<ul class="actions special">
-										<li><a href="generic.html" class="button">Check it out!</a></li>
-									</ul>
-								</article>
-							</section>
-							<section class="post featured">
-								<article>
-									<header>
-										<h2><a href="#">Personal ProjectS<br /></a></h2>
-									</header>
-									<img class="image fit" src="images/pic03.png" alt="" /></a>
-									<p class="centerText">A showcase of my personal projects</p>
-									<ul class="actions special">
-										<li><a href="personalProjects.html" class="button">Check it Out!</a></li>
-									</ul>
-								</article>
-							</section>
-								
-								<!-- <article>
-									<header>
-										<span class="date">April 18, 2017</span>
-										<h2><a href="#">Ante mattis<br />
-										interdum dolor</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 14, 2017</span>
-										<h2><a href="#">Tempus sed<br />
-										nulla imperdiet</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 11, 2017</span>
-										<h2><a href="#">Odio magna<br />
-										sed consectetur</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 7, 2017</span>
-										<h2><a href="#">Augue lorem<br />
-										primis vestibulum</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article> -->
-							</section>
-						</div>
-						<!-- Footer -->
-						<footer id="footer">
-							<!-- <section>
-								<form method="post" action="sendEmail.php">
-									<div class="fields">
-										<div class="field">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="3"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" /></li>
-									</ul>
-								</form>
-							</section> -->
-							<section class="split contact">
-								<section class="alt">
-									<h3>Address</h3>
-									<p>Edinburgh, Scotland<br /></p>
-								</section>
-								<section>
-									<h3>Email</h3>
-									<p><a href="#">tor4704@gmail.com</a></p>
-								</section>
-								<section>
-									<h3>Social</h3>
-									<ul class="icons alt">
-										<li><a href="https://www.linkedin.com/in/nontapat-chuenkingkaew" target="_blank" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-										<li><a href="https://github.com/TorCh04" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-									</ul>
-								</section>
-							</section>
-						</footer>
+  <!-- ── SKILLS ──────────────────────────────────────────────── -->
+  <section id="skills" class="section skills">
+    <div class="section__inner">
+      <span class="section__eyebrow reveal">What I Know</span>
+      <h2 class="section__title reveal">Skills</h2>
+      <div class="skills__groups reveal-stagger">
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy;2024 Nontapat Chuenkingkaew</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+        <div class="skill-group">
+          <h3 class="skill-group__title">Languages</h3>
+          <ul class="skill-group__tags">
+            <li class="tag">Python</li>
+            <li class="tag">JavaScript</li>
+            <li class="tag">Java</li>
+            <li class="tag">C</li>
+            <li class="tag">SQL</li>
+            <li class="tag">HTML / CSS</li>
+          </ul>
+        </div>
 
-			</div>
+        <div class="skill-group">
+          <h3 class="skill-group__title">Frameworks &amp; Databases</h3>
+          <ul class="skill-group__tags">
+            <li class="tag">Node.js</li>
+            <li class="tag">React.js</li>
+            <li class="tag">MongoDB</li>
+          </ul>
+        </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        <div class="skill-group">
+          <h3 class="skill-group__title">Tools &amp; Platforms</h3>
+          <ul class="skill-group__tags">
+            <li class="tag">Git / GitHub</li>
+            <li class="tag">JIRA</li>
+            <li class="tag">GNU / Linux</li>
+          </ul>
+        </div>
 
-	</body>
+        <div class="skill-group">
+          <h3 class="skill-group__title">AI / ML</h3>
+          <ul class="skill-group__tags">
+            <li class="tag">Computer Vision</li>
+            <li class="tag">Deep Learning</li>
+            <li class="tag">CNNs</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE ──────────────────────────────────────────── -->
+  <section id="experience" class="section experience">
+    <div class="section__inner">
+      <span class="section__eyebrow reveal">Where I've Been</span>
+      <h2 class="section__title reveal">Experience</h2>
+
+      <div class="timeline">
+
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__body">
+            <span class="timeline__date">Jun 2026 &ndash; Aug 2026</span>
+            <h3 class="timeline__role">Engineering Intern</h3>
+            <p class="timeline__org">NatWest Group &middot; Edinburgh</p>
+            <ul class="timeline__bullets">
+              <li>Worked within a professional Agile team, actively participating in stand-ups, sprint planning, and retrospectives to deliver iterative results.</li>
+              <li>Developed an AI-based documentation quality enhancer, leveraging machine learning techniques to improve accuracy and consistency of internal documentation.</li>
+            </ul>
+            <ul class="timeline__tags">
+              <li class="tag tag--sm">Agile</li>
+              <li class="tag tag--sm">Machine Learning</li>
+              <li class="tag tag--sm">Python</li>
+              <li class="tag tag--sm">AI</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__body">
+            <span class="timeline__date">Sep 2024 &ndash; May 2026</span>
+            <h3 class="timeline__role">Front of House</h3>
+            <p class="timeline__org">Heriot-Watt Student Union &middot; Edinburgh</p>
+            <ul class="timeline__bullets">
+              <li>Delivered exceptional customer service, strengthening communication and problem-solving skills through engagement with diverse clients.</li>
+              <li>Thrived in high-pressure, fast-paced settings, maintaining accuracy and professionalism throughout.</li>
+              <li>Collaborated closely with team members to streamline operations and handle peak demand.</li>
+            </ul>
+            <ul class="timeline__tags">
+              <li class="tag tag--sm">Teamwork</li>
+              <li class="tag tag--sm">Communication</li>
+              <li class="tag tag--sm">Problem Solving</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Education -->
+      <div class="education-card reveal">
+        <div class="education-card__header">
+          <span class="education-card__icon"><i class="fas fa-graduation-cap"></i></span>
+          <div class="education-card__info">
+            <h3 class="education-card__degree">MEng Software Engineering</h3>
+            <p class="education-card__school">Heriot-Watt University &middot; Edinburgh</p>
+          </div>
+          <span class="education-card__dates">Sep 2022 &ndash; May 2027</span>
+        </div>
+        <ul class="education-card__bullets">
+          <li>Predicted Grade: 1st Class</li>
+          <li>Academic Achievement: Deputy Principle's Award</li>
+          <li>Extra-Curricular: Member of the Heriot-Watt Volleyball Team</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ─────────────────────────────────────────────── -->
+  <section id="projects" class="section projects">
+    <div class="section__inner">
+      <span class="section__eyebrow reveal">What I've Built</span>
+      <h2 class="section__title reveal">Projects</h2>
+      <div class="projects__grid reveal-stagger">
+
+        <article class="project-card">
+          <div class="project-card__header">
+            <span class="project-card__folder"><i class="fas fa-folder"></i></span>
+            <div class="project-card__links"></div>
+          </div>
+          <h3 class="project-card__title">AI Drone Imagery Identification &amp; Categorisation</h3>
+          <p class="project-card__desc">
+            AI-driven system for drone imagery analysis performing object detection,
+            classification, and monitoring using computer vision and deep learning.
+            Designed robust preprocessing pipelines and implemented scalable models
+            optimised for accuracy and efficiency.
+          </p>
+          <ul class="project-card__tags">
+            <li class="tag">Python</li>
+            <li class="tag">Computer Vision</li>
+            <li class="tag">Deep Learning</li>
+            <li class="tag">CNNs</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__header">
+            <span class="project-card__folder"><i class="fas fa-folder"></i></span>
+            <div class="project-card__links"></div>
+          </div>
+          <h3 class="project-card__title">Moogle Energy Tracker</h3>
+          <p class="project-card__desc">
+            Full-stack web application to track and manage energy usage of simulated
+            IoT smart devices. Features a leaderboard system built with MongoDB and
+            RESTful APIs. Developed in an Agile team with CI/CD practices, contributing
+            to UI/UX and backend integration.
+          </p>
+          <ul class="project-card__tags">
+            <li class="tag">Node.js</li>
+            <li class="tag">React.js</li>
+            <li class="tag">MongoDB</li>
+            <li class="tag">REST API</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__header">
+            <span class="project-card__folder"><i class="fas fa-folder"></i></span>
+            <div class="project-card__links"></div>
+          </div>
+          <h3 class="project-card__title">Image Processing Program</h3>
+          <p class="project-card__desc">
+            C program on Raspberry Pi for RGB bitmap image processing, implementing
+            HSHEX and monochrome conversions. Automated C source code generation
+            for processed image data, improving code reusability and modularity.
+          </p>
+          <ul class="project-card__tags">
+            <li class="tag">C</li>
+            <li class="tag">Raspberry Pi</li>
+            <li class="tag">Embedded Systems</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__header">
+            <span class="project-card__folder"><i class="fas fa-folder"></i></span>
+            <div class="project-card__links">
+              <a href="https://github.com/TorCh04/Slot-Machine" target="_blank" rel="noopener" aria-label="View on GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__title">Slot Machine</h3>
+          <p class="project-card__desc">
+            A fun personal project &mdash; a fully functional slot machine game implementation
+            exploring game logic, randomisation, and interactive UI design.
+          </p>
+          <ul class="project-card__tags">
+            <li class="tag">Personal</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ──────────────────────────────────────────────── -->
+  <section id="contact" class="section contact">
+    <div class="section__inner reveal">
+      <span class="section__eyebrow">Get in Touch</span>
+      <h2 class="section__title">Contact</h2>
+      <p class="contact__intro">
+        Open to internship opportunities, collaborations, and interesting conversations.
+        The best way to reach me is by email &mdash; I'll get back to you promptly.
+      </p>
+      <a href="mailto:tor4704@gmail.com" class="btn btn--primary btn--lg">
+        tor4704@gmail.com
+      </a>
+      <ul class="contact__socials">
+        <li>
+          <a href="https://github.com/TorCh04" target="_blank" rel="noopener"
+             class="social-icon" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/nontapat-chuenkingkaew" target="_blank" rel="noopener"
+             class="social-icon" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ───────────────────────────────────────────────── -->
+  <footer class="footer">
+    <p class="footer__copy">&copy; 2026 Nontapat Chuenkingkaew</p>
+  </footer>
+
+  <script src="assets/js/portfolio.js"></script>
+</body>
 </html>
