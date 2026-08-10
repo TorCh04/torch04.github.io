@@ -48,8 +48,8 @@ export const projects: Project[] = [
   {
     title: 'Cici — Minecraft VLM Assistant',
     description:
-      "Locally-run Minecraft teaching assistant powered by a Vision Language Model that analyses the player's live screen to give contextual advice and pre-emptive hazard warnings. Combines a Python voice/TTS pipeline, a Node.js Mineflayer bot, and a custom Fabric mod for state tracking, all running on-device via Ollama with a quantised model.",
-    tags: ['Python', 'Node.js', 'Vision Language Models', 'Ollama', 'Minecraft Modding'],
+      "Coursework project built with a team for F21CA — a locally-run Minecraft teaching assistant powered by a Vision Language Model that analyses the player's live screen to give contextual advice and pre-emptive hazard warnings, running fully on-device via a quantised model.",
+    tags: ['Python', 'Node.js', 'Vision Language Models', 'Ollama', 'Team Project'],
     github: 'https://github.com/CordlessGnu/Cici',
   },
 ];
