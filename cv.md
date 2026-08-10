@@ -24,8 +24,8 @@
 \newcommand{\ProjOneTech}{Python}
 \newcommand{\ProjTwoTitle}{Moogle Energy Tracker Website}
 \newcommand{\ProjTwoTech}{Node.js, React.js, MongoDB}
-\newcommand{\ProjThreeTitle}{Image Processing Program}
-\newcommand{\ProjThreeTech}{C}
+\newcommand{\ProjThreeTitle}{Cici: Minecraft VLM Assistant}
+\newcommand{\ProjThreeTech}{Python, Node.js, Ollama}
 
 \newcommand{\WorkTwoTitle}{Front of House at Heriot-Watt Student Union}
 \newcommand{\WorkTwoDates}{Sep 2024 {\color{black}\textendash} May 2026}
@@ -194,10 +194,15 @@
 \noindent
 \textbf{\ProjThreeTitle{} \textbar{} \ProjThreeTech}
 \begin{itemize}
-  \item Developed a C program on Raspberry Pi for RGB bitmap image processing,
-        implementing HSHEX and monochrome conversions.
-  \item Automated C source code generation for processed image data, improving code
-        reusability and modularity.
+  \item Delivered a real-time, fully on-device Minecraft assistant, as evidenced by working
+        end-to-end demos integrating five independent subsystems, by combining a quantised
+        Vision Language Model via Ollama with a live screen-analysis pipeline.
+  \item Enabled hands-free player guidance, as evidenced by functioning voice-command and
+        text-to-speech responses during gameplay sessions, by building a Python speech
+        bridge alongside a Node.js Mineflayer bot for in-game actions.
+  \item Tracked player state accurately in real time, as evidenced by correct achievement
+        and event detection throughout test playthroughs, by developing a custom Fabric mod
+        integrated with the Minecraft client.
 \end{itemize}
 
 
