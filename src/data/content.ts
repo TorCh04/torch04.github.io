@@ -40,11 +40,17 @@ export const projects: Project[] = [
     tags: ['C', 'Raspberry Pi', 'Embedded Systems'],
   },
   {
-    title: 'Cici — Minecraft VLM Assistant',
+    title: 'Cici: Minecraft VLM Assistant',
     description:
-      "Coursework project built with a team for F21CA — a locally-run Minecraft teaching assistant powered by a Vision Language Model that analyses the player's live screen to give contextual advice and pre-emptive hazard warnings, running fully on-device via a quantised model.",
+      "Coursework project built with a team for F21CA: a locally-run Minecraft teaching assistant powered by a Vision Language Model that analyses the player's live screen to give contextual advice and pre-emptive hazard warnings, running fully on-device via a quantised model.",
     tags: ['Python', 'Node.js', 'Vision Language Models', 'Ollama', 'Team Project'],
     github: 'https://github.com/CordlessGnu/Cici',
+  },
+  {
+    title: 'Roguelike Dungeon Crawler',
+    description:
+      "2D Unity roguelike dungeon crawler built for Games Programming coursework (F20GP CW2). Designed and implemented the game's bosses, including animations, combat logic, attack patterns, and abilities, and built the original procedural map randomiser, modelled on The Binding of Isaac's generation approach.",
+    tags: ['Unity', 'C#', 'Game Development', 'Procedural Generation', 'Private Repo'],
   },
 ];
 
