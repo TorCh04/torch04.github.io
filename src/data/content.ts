@@ -45,6 +45,13 @@ export const projects: Project[] = [
     tags: ['Personal'],
     github: 'https://github.com/TorCh04/Slot-Machine',
   },
+  {
+    title: 'Cici — Minecraft VLM Assistant',
+    description:
+      "Locally-run Minecraft teaching assistant powered by a Vision Language Model that analyses the player's live screen to give contextual advice and pre-emptive hazard warnings. Combines a Python voice/TTS pipeline, a Node.js Mineflayer bot, and a custom Fabric mod for state tracking, all running on-device via Ollama with a quantised model.",
+    tags: ['Python', 'Node.js', 'Vision Language Models', 'Ollama', 'Minecraft Modding'],
+    github: 'https://github.com/CordlessGnu/Cici',
+  },
 ];
 
 export const experiences: WorkExperience[] = [
