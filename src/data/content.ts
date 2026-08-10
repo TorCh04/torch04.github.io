@@ -31,6 +31,7 @@ export const projects: Project[] = [
     description:
       'Full-stack web application to track and manage energy usage of simulated IoT smart devices. Features a leaderboard system built with MongoDB and RESTful APIs. Developed in an Agile team with CI/CD practices, contributing to UI/UX and backend integration.',
     tags: ['Node.js', 'React.js', 'MongoDB', 'REST API'],
+    github: 'https://github.com/TorCh04/Group4F29SO-Project',
   },
   {
     title: 'Image Processing Program',
