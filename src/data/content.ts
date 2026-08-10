@@ -39,13 +39,6 @@ export const projects: Project[] = [
     tags: ['C', 'Raspberry Pi', 'Embedded Systems'],
   },
   {
-    title: 'Slot Machine',
-    description:
-      'A fun personal project — a fully functional slot machine game implementation exploring game logic, randomisation, and interactive UI design.',
-    tags: ['Personal'],
-    github: 'https://github.com/TorCh04/Slot-Machine',
-  },
-  {
     title: 'Cici — Minecraft VLM Assistant',
     description:
       "Coursework project built with a team for F21CA — a locally-run Minecraft teaching assistant powered by a Vision Language Model that analyses the player's live screen to give contextual advice and pre-emptive hazard warnings, running fully on-device via a quantised model.",
