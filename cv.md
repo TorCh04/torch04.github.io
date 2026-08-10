@@ -6,7 +6,7 @@
 \newcommand{\CVPhone}{+44 7708566435}
 \newcommand{\CVPortfolio}{torch04.github.io}
 \newcommand{\CVLinkedIn}{LinkedIn Profile}
-\newcommand{\CVLinkedInURL}{https://linkedin.com}   % replace with real URL
+\newcommand{\CVLinkedInURL}{https://www.linkedin.com/in/nontapat-chuenkingkaew/}   % replace with real URL
 
 \newcommand{\SecSkills}{SKILLS \& TECHNICAL TOOLS}
 \newcommand{\SecEducation}{EDUCATION}

@@ -6,7 +6,8 @@
       "Bash(npm install *)",
       "Bash(npm audit *)",
       "Bash(npm run *)",
-      "Bash(python -c \"import re; html=open\\('dist/index.html'\\).read\\(\\); m=re.search\\('content=\\\\\"\\([^\\\\\"]+\\)\\\\\"', html[html.find\\('Content-Security-Policy'\\):]\\); print\\(m.group\\(1\\)\\)\")"
+      "Bash(python -c \"import re; html=open\\('dist/index.html'\\).read\\(\\); m=re.search\\('content=\\\\\"\\([^\\\\\"]+\\)\\\\\"', html[html.find\\('Content-Security-Policy'\\):]\\); print\\(m.group\\(1\\)\\)\")",
+      "WebFetch(domain:github.com)"
     ]
   }
 }
