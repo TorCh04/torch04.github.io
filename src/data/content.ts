@@ -47,7 +47,7 @@ export const projects: Project[] = [
     github: 'https://github.com/CordlessGnu/Cici',
   },
   {
-    title: 'Roguelike Dungeon Crawler',
+    title: 'Bonein Loot',
     description:
       "2D Unity roguelike dungeon crawler built for Games Programming coursework (F20GP CW2). Designed and implemented the game's bosses, including animations, combat logic, attack patterns, and abilities, and built the original procedural map randomiser, modelled on The Binding of Isaac's generation approach.",
     tags: ['Unity', 'C#', 'Game Development', 'Procedural Generation', 'Private Repo'],
